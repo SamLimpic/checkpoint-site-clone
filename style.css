@@ -1,0 +1,34 @@
+.bg-image {
+    background-image:url(//placehold.it/300x300);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+
+.left-border {
+    border-left: 5px;
+    border-left-style: solid;
+    border-left-color: var(--primary);
+}
+
+.header-border {
+    border-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--secondary);
+}
+
+.glow {
+    box-shadow: inset 0 5px 1px var(--danger);
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .card-float {
+    position: absolute;
+    bottom: -6rem;
+    right: 4rem;
+}
+
+}
