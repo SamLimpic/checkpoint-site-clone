@@ -5,16 +5,24 @@
     position: relative;
 }
 
+.bg-off {
+    background-color:ivory;
+}
+
+.text-off {
+    color: ivory;
+}
+
 .left-border {
     border-left: 5px;
     border-left-style: solid;
-    border-left-color: var(--danger);
+    border-left-color: var(--warning);
 }
 
 .label-border {
     border-bottom: 3px;
     border-bottom-style: solid;
-    border-bottom-color: var(--danger);
+    border-bottom-color: var(--warning);
 }
 
 .center {
@@ -25,7 +33,7 @@
 
 .c-border {
     border: 3px;
-    border-color: var(--danger);
+    border-color: var(--warning);
     border-style: solid;
     border-radius: 5%;
 }
@@ -34,9 +42,23 @@
     filter: drop-shadow(3px 3px 3px var(--dark))
 }
 
+.r-glow {
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.r-glow:hover {
+    color: var(--danger)!important;
+    transition: all 1s ease-in-out;
+}
+
 .glow {
-    box-shadow: inset 0 5px 1px var(--danger);
-    border-radius: 50%;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.glow:hover {
+    color: var(--light)!important;
     transition: all 1s ease-in-out;
 }
 
