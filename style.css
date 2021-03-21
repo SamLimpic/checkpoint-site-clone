@@ -1,6 +1,6 @@
 .bg-image {
-    background-image:url(//placehold.it/300x300);
-    background-position:center;
+    background-image:url(./Assets/eye.gif);
+    background-position:top;
     background-size: cover;
     position: relative;
 }
@@ -8,22 +8,44 @@
 .left-border {
     border-left: 5px;
     border-left-style: solid;
-    border-left-color: var(--primary);
+    border-left-color: var(--danger);
 }
 
 .header-border {
     border-bottom: 5px;
     border-bottom-style: solid;
-    border-bottom-color: var(--secondary);
+    border-bottom-color: var(--danger);
+}
+
+.o-90 {
+    opacity: 90%;
+}
+
+.c-border {
+    border: 5px;
+    border-color: var(--danger);
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.outline {
+    filter: drop-shadow(3px 3px 3px var(--dark))
 }
 
 .glow {
-    box-shadow: inset 0 5px 1px var(--danger);
+    box-shadow: inset 0 5px 1px var(--warning);
     border-radius: 50%;
     transition: all 1s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
+
+    .bg-image {
+    background-image:url(./Assets/teahm-bg.webp);
+    background-position:center;
+    background-size: auto;
+    position: relative;
+}
 
     .card-float {
     position: absolute;
