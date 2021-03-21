@@ -84,12 +84,20 @@
                                 the right place for you!<br>Our ideal applicants will have a go-getter attitude and a
                                 willingness to sell their eternal soul for material gain within the mortal confines of
                                 Middle Earth.</h5>
+                            <button id="button_teaser" class="bg-warning text-light my-3" onclick="playPause()">
+                                <h2>Promo Video</h2>
+                            </button>
                         </div>
-                        <video class="center o-75 p-3" width="80%" height="auto" controls>
+
+                        <video class="center p-3" width="80%" height="auto" id="video_teaser" controls>
                             <source src="./Assets/recruitment.mp4" type="video/mp4">
                             <source src="./Assets/recruitment.ogg" type="video/ogg">
                             Your browser does not support the video tag.
                         </video>
+
+
+
+
 
                     </div>
                 </div>
@@ -299,12 +307,37 @@
                         contract with the Dark Lord, to be terminated only upon associate's painful demise.</i></h5>
             </div>
         </div>
-
     </footer>
+
+    <!-- Script For Video Player and Slideshow ANCHOR -->
     <script>
         $('.carousel').carousel({
             interval: 5000
-        })</script>
+        })
+    </script>
+
+    <script>
+        $('#video_teaser').hide();
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#button_teaser').click(function () {
+                $('#video_teaser').show();
+                $('#button_teaser').hide();
+                $('#video_teaser').get(0).play();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#video_teaser').on('ended', function () {
+                $('#video_teaser').hide();
+                $('#button_teaser').show();
+            });
+        });
+    </script>
 </body>
 
 </html>
