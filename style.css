@@ -11,24 +11,10 @@
     border-left-color: var(--danger);
 }
 
-.header-border {
-    border-bottom: 5px;
-    border-bottom-style: solid;
-    border-bottom-color: var(--danger);
-}
-
 .label-border {
     border-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-color: var(--danger);
-}
-
-.o-90 {
-    opacity: 90%;
-}
-
-.o-75 {
-    opacity: 75%;
 }
 
 .center {
@@ -38,7 +24,7 @@
 }
 
 .c-border {
-    border: 5px;
+    border: 3px;
     border-color: var(--danger);
     border-style: solid;
     border-radius: 5%;
