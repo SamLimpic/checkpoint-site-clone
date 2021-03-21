@@ -17,6 +17,12 @@
     border-bottom-color: var(--danger);
 }
 
+.label-border {
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--danger);
+}
+
 .o-90 {
     opacity: 90%;
 }
@@ -59,7 +65,7 @@
 
     .card-float {
     position: absolute;
-    bottom: -4rem;
+    bottom: -5.5rem;
     right: 4rem;
 }
 
